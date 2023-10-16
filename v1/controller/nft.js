@@ -40,7 +40,7 @@ exports.addnftdata = async (req, res, next) => {
 
     res.send({ status: 200, message: { nft_url: result.secure_url } });
   } catch (err) {
-    res.send("OOPS!, Sorry Something went wrong");
+    res.send("OOPS!,Sorry Something went wrong");
     // next(err);
   }
 };
@@ -49,7 +49,7 @@ exports.mintNft = async (req, res, next) => {
   try {
     let nft_id;
   } catch (err) {
-    res.send("OOPS!, Sorry Something went wrong");
+    res.send("OOPS!,Sorry Something went wrong");
     // next(err);
   }
 };
@@ -59,7 +59,7 @@ exports.getNft = async (req, res, next) => {
     const foundedObj = await Models.NftPre.findAll(req.body);
     res.send(foundedObj);
   } catch (err) {
-    res.send("OOPS!, Sorry Something went wrong");
+    res.send("OOPS!,Sorry Something went wrong");
     // next(err);
   }
 };
